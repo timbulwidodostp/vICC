@@ -8,7 +8,7 @@ install.packages("rjags")
 library("ggplot2")
 library("rjags")
 library("vICC")
-vicc = read.csv("https://raw.githubusercontent.com/timbulwidodostp/vicc/main/vicc/vicc.csv",sep = ";")
+vicc = read.csv("https://raw.githubusercontent.com/timbulwidodostp/vICC/main/vicc/vicc.csv",sep = ";")
 # Estimation Varying intraclass correlation coefficient Use vicc With (In) R Software
 vicc <- vicc(y = vicc$rt, group = vicc$id, chains = 2, iter = 500, burnin = 10, type = "pick_group")
 vicc
